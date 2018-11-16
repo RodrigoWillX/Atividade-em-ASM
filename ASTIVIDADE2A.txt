@@ -1,0 +1,28 @@
+.data
+A : 0 
+B : 0
+C : 0
+D : 0
+.text
+LDI  12 #ACC = 12
+STO  A  #(A) = ACC
+LDI  4  #ACC = 4
+STO  B  #(B) = ACC
+LDI  1  #ACC = 1
+STO  C  #(C) = ACC
+LDI  13 #ACC = 13
+STO  D  #(D) = ACC
+LD   C  #ACC = C
+SUB  D  #ACC = ACC - (D)
+STO  B  #(C) = ACC
+LD   B  #ACC = B
+SUBI 1  #ACC = ACC - 1
+STO  C  #(C) = ACC
+LD   A  #ACC = A
+STO  D  #(D) = ACC
+LDI  5  #ACC = 5
+ADD  C  #ACC = ACC + (C)
+STO  A  #(A) = ACC
+LD   A  #ACC = A
+ADD  B  #ACC = ACC + (B)
+STO  D  #(D) = ACC
